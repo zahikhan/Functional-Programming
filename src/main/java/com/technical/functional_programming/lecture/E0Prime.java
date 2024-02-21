@@ -13,7 +13,7 @@ public class E0Prime {
     System.out.println(isPrime(5));
   }
 
-  // Numebr> 1 and its shouldn't divisble any other number
+  // Prime Numbers: Number > 1 and its shouldn't divisible any other number
   private static boolean isPrime(int number) {
 /*
     for (int divisor = 2; divisor < number; divisor++) {
@@ -22,6 +22,8 @@ public class E0Prime {
       }
     }
     return number > 1;*/
+    //USING THE FUNCTIONAL STYLE..
+    //CHECK THE DIFFERENCE
     return number>1 && IntStream.range(2, number)
             .noneMatch(getsDivided(number));
   }

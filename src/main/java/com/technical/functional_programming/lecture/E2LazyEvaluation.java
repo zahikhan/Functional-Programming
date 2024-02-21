@@ -9,13 +9,6 @@ public class E2LazyEvaluation {
 
     List<Integer> temperature = List.of(30, 31, 41, 12, 14, 12);
 
-    System.out.println(
-        temperature.stream()
-            .filter(
-                x -> {
-                  temperature.remove(x);
-                  return true;
-                })
-            .collect(Collectors.toList()));
+
   }
 }
